@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head.ejs') %>
+
+    <body>
+        <header>
+            <h1> Sub-Topic: API Example </h1>
+        </header>
+        <hr>
+        <%- include('partials/nav.ejs') %>
+
+        <br><br><br>
+
+        <main>
+
+        <div id="api-div">
+            <h1>A Web API and Node Package App Combined</h1>
+            <img src="<%= dogImage %>" style="width: 600px;"><br><br>
+
+            <b>"<%= quote.text %>"</b><br> -<em><%= quote.author %></em> <br><br>
+
+            <p>The above image and quote are a combination of a Web API (<a href="https://dog.ceo/api/breeds/image/random" class="ext-link">NPM Inspirational Quotes Node Package</a>) that returns a random dog picture on each refresh as well as a simple NPM Package (<a href="https://www.npmjs.com/package/inspirational-quotes" class="ext-link">https://dog.ceo/api/breeds/image/random</a>) which displays a randomly pre-selected inspirational quote.</p>
+        </div>
+        </main>
+        
+        
+        <%- include('partials/footer.ejs') %>
+                
+    </body>
+
+</html>

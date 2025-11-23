@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head.ejs') %>
+    
+    
+
+    <body>
+        <header>
+            <h1> Sub-Topic: PowerShell with APIs</h1>
+        </header>
+        <hr>
+        <%- include('partials/nav.ejs') %>
+
+        <br><br><br>
+
+        <main>
+
+            <figure>
+                <img class="still" src="img/duo_api.png" alt="Duo API Parameters">
+                <figcaption>
+                    <em>Image: A few DUO API parameters (Duo). <br> <a href="https://duo.com/docs/authapi" class="ext-link">Read More: Duo API</a></em>
+                    <br><br><br><br><br>
+                    <p>Web demo: Want to see how APIs work in real time? Try out this (initially) free live API testing tool from Supademo below!</p>
+                    <iframe src="https://app.supademo.com/embed/cmhjf0mo2010q040jy1eq0nth?v_email=EMAIL&v_name=NAME&embed_v=2&utm_source=embed"></iframe>
+                 <br><br><br>
+                </figcaption>
+
+                
+
+
+            </figure>
+
+            <div id="fact-text-div">
+            
+                <p><b>Drilling Down Deeper: How Do REST APIs Work?</b></p>
+                <p>A REST API is a web-based way for software to send and receive data. You make a request to a URL, often include an access token, and the service sends data back (JSON). Because it uses normal web standards (HTTP, headers, URLs), lots of systems can use it.</p>
+                    <a href="https://www.redhat.com/en/topics/api/what-is-a-rest-api" class="ext-link">Red Hat: What is a REST API?</a>
+
+                <p><b>REST: Representational State Transfer</b></p>
+                <p>REST is an acronym for <b>RE</b>presentational <b>S</b>tate <b>T</b>ransfer and an architectural style for distributed hypermedia systems. 
+                    Roy Fielding first presented it in 2000 in his famous dissertation. Since then, it has become one of the most widely used approaches for building web-based APIs (Application Programming Interfaces).
+                    REST is not a protocol or a standard, it is an architectural style. During the development phase, API developers can implement REST in a variety of ways.
+                    Like the other architectural styles, REST also has its guiding principles and constraints. These principles must be satisfied if a service interface is to be referred to as RESTful.</p>
+                <p>PowerShell has two important commands (cmdlets) for web calls:</p>
+
+                <ul>
+                    <li><span class = "list-fact">Invoke-WebRequest</span></li>
+                    <li><span class = "list-fact">Invoke-RestMethod</span> </li>
+                </ul>
+
+                <p>Click below to learn more!</p>
+                <a href="https://restfulapi.net/" class="ext-link">RESTful API: What is a REST?</a>
+                <br><br>
+
+                <p><b>Drilling Down Deeper: How Do SOAP APIs Work?</b></p>
+                <p>SOAP and REST are two methods for exchanging data over the internet. For example, if your company's internal accounting system automatically sends invoices to a client's system, the two programs communicate through an API that defines how data is shared. SOAP and REST represent two different ways to design such APIs. SOAP is more rigid and relies on the XML format, while REST offers greater flexibility by supporting multiple data formats such as JSON, XML, or plain text.</p>
+                    <a href="https://aws.amazon.com/compare/the-difference-between-soap-rest/" class="ext-link">AWS: REST vs. SOAP</a>
+
+                <p><b>SOAP: Simple Opbject Access Protocol</b></p>
+                <p>SOAP is an acronym for <b>S</b>imple <b>O</b>bject <b>A</b>ccess <b>P</b>rotocol and is a message specification for exchanging information between systems and applications. 
+                SOAP is older, more established, and reliable than REST but can be slower depending on the information system's architectural style.</p>
+                <p>SOAP uses XML for messages to and from an API client using four distinct dimensions to the API protocol:</p>
+
+                <ul>
+                    <li><span class = "list-fact">Envelope</span>: Defining the structure of the message.</li>
+                    <li><span class = "list-fact">Encoding</span>: Rules for expressing the type of data.</li>
+                    <li><span class = "list-fact">Requests</span>: How each SOAP API request is structured.</li>
+                    <li><span class = "list-fact">Encoding</span>: How each SOAP API response is structured.</li>
+                </ul>
+
+                <p>Click below to learn more!</p>
+                <a href="https://blog.postman.com/soap-api-definition/" class="ext-link">Postman: What is a SOAP API?</a>
+                <p></p><br><br><p></p>
+
+                <p><b>Further Reading and Getting Started</b></p>
+                <p>APIs power our information and our world to serve us better with more accuracy and control, here are some more links to check out for hands-on learning and self-development:</p>
+
+                <ul>
+                    <li><span class = "ext-link"><a href="https://rapidapi.com" class="ext-link">RapidAPI: Find and test public APIs</a></span></li>
+                    <li><span class = "ext-link"><a href="https://postman.com/explore" class="ext-link">Postman Explore: Real-world API examples</a></span> </li>
+                    <li><span class = "ext-link"><a href="https://reqres.in" class="ext-link">ReqRes: Practice REST API calls</a></span> </li>
+                </ul>
+
+                <p></p><br><br><p></p>
+            </div>
+        </main>
+        
+        
+        <footer>
+            <!-- Your last name and year here in ALL assignments -->
+            <hr>
+            <br><br><br><br>
+            CST336 Internet Programming. 2025&copy; Connors <br>
+            <strong>Disclaimer:</strong> The information in this webpage is fictitious. <br>
+            <figure>
+                <img id="ft_img" src="img/Logo_Primary-Reversed-color-resize.png" alt="Picture of CSUMB Logo Reversed Colors">
+            </figure>
+            
+        </footer>
+                
+    </body>
+
+</html>

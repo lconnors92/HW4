@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include('partials/head.ejs') %>
+    
+
+    <body>
+        <header>
+            <h1> Sub-Topic: Automating IT Processes</h1>
+        </header>
+        <hr>
+        <%- include('partials/nav.ejs') %>
+
+        <br><br><br>
+
+        <main>
+
+            <figure>
+                <img class="still" src="img/automation_img3.png" alt="NinjaOne PowerShell Script">
+                <figcaption>
+                    <em>Image: PowerShell script to automate discovering failed logins (NinjaOne).<br> <a href="https://www.ninjaone.com/script-hub/find-failed-login-attempts-windows-powershell/" class="ext-link">Read Full Script: NinjaOne Script Hub</a></em>
+                    <br><br><br><br>
+                </figcaption>
+            </figure>
+
+            <div id="fact-text-div">
+            
+                <p><b>Why Do We Automate?</b></p>
+                <p>Humans make mistakes. Manual work is slow and <em>often</em> consistent. If every admin does a task slightly differently, it's hard to support or audit. Automation makes the task run the same way every time. It's also useful for after-hours work as well, no one wants to hear that more than IT. Click below to learn more!</p>
+                    <a href="https://www.advsyscon.com/blog/it-automation-explained/" class="ext-link">AdvSysCon: IT Automation Explained</a>
+
+                <p><b>Heavy Hitters of Automation</b></p>
+                <p>Here is a list of some of the most commonly automated IT processes:</p>
+                 <ul>
+                    <li><span class = "list-fact">User management: </span>when someone is hired, a script can create the account, add it to groups, and send a welcome email.</li>
+                    <li><span class = "list-fact">Backing Up Data: </span>PowerShell can copy data to a safe location and delete temp files to free space. </li>
+                    <li><span class = "list-fact">Patching and Software Checks: </span>scripts can confirm machines are on the right version and produce a report. </li>
+                    <li><span class = "list-fact">Inventory and Reporting: </span>run a PowerShell script that collects device info from many machines and exports to CSV.</li>
+                </ul>
+                <br>
+                <p><b>Best Practice When Automating</b></p>
+                <p>Here is a list of some best practices to ensure happy and functional automation:</p>
+                 <ul>
+                    <li><span class = "list-fact">Test your scripts on a non-production machine first.</span></li>
+                    <li><span class = "list-fact">Add logging so you know what the script did.</span></li>
+                    <li><span class = "list-fact">Use Task Scheduler to run scripts on a schedule.</span></li>
+                </ul>
+                <p>Click below to learn more!</p>
+                <a href="https://www.ninjaone.com/blog/how-to-automate-tasks-with-powershell/" class="ext-link">NinjaOne: How to Automate Tasks With PowerShell</a>
+                <br><br>
+
+                <p><b>Other PowerShell Automation Examples</b></p>
+                <p>Below is a table mapping out a handful of incredibly tedious tasks (API or otherwise) made much simpler, among many others:</p>
+                <br><br>
+
+                      <div id="content">
+                        <!-- create table to map out PowerShell usefulness! Lifted from Lab 1 -->
+                         <table>
+                            <tr id="table-header">
+                                <td><strong>Type of Information System</strong></td>
+                                <td><strong>What Gets Automated</strong></td>
+                                <td><strong>PowerShell Tools</strong></td>
+                                <td><strong>Benefits</strong></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td><strong>Active Directory</strong></td>
+                                <td><strong>User logs, stale accounts, license usage, MFA status</strong></td>
+                                <td><strong>AzureAD, MS Graph, Import-CSV, Export-CSV</strong></td>
+                                <td><strong>Reporting, compliance, security, AD housekeeping</strong></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td><strong>AWS Management</strong></td>
+                                <td><strong>Start/stop EC2 instances, snapshots, IAM reports</strong></td>
+                                <td><strong>AWS Tools for PowerShell</strong></td>
+                                <td><strong>Automated maintenance</strong></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td><strong>Meraki Network (via API)</strong></td>
+                                <td><strong>Get device lists, update network configs, pull alerts</strong></td>
+                                <td><strong>Invoke-RestMethod with Meraki API</strong></td>
+                                <td><strong>Secure API key storage, change logs</strong></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td><strong>ERP Systems</strong></td>
+                                <td><strong>Export data, sync users, nightly cleanup</strong></td>
+                                <td><strong>REST API calls, SQL PowerShell modules</strong></td>
+                                <td><strong>Testing, recordkeeping, auditing</strong></td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                    <br><br>
+                    <p>Further reading and useful links:</p>
+                <a href="https://www.ninjaone.com/blog/it-automation-scripts-definition-and-overview/" class="ext-link">NinjaOne: IT Automation Scripts Definition and Overview</a>
+                <br><br>
+                <a href="https://docs.aws.amazon.com/powershell/" class="ext-link">AWS: PowerShell Documentation</a>
+                <br><br>
+                <a href="https://developer.cisco.com/meraki/api-v1/introduction/#meraki-dashboard-apis" class="ext-link">Cisco: Meraki Dashboard APIs</a>
+                <p></p><br><br><p></p>
+            </div>
+        </main>
+        
+        
+        <%- include('partials/footer.ejs') %>
+                
+    </body>
+
+</html>
